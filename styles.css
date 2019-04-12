@@ -15,7 +15,8 @@ aside{
 }
 
 aside div img{
-    background-color: black;
+    background-color: darkgray;
+    border-radius: 50%;
 }
 
 article{
@@ -38,17 +39,26 @@ footer div{
     width: 600px;
 }
 
+footer div a{
+    color: grey;
+    text-decoration: none;
+}
+
 header{
     background-image: url("images/banner.png");
     grid-area: header;
+    padding: 0;
     margin-top: 7px;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #textoBanner{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color: white;
 }
 
 header div .bloco{
@@ -57,8 +67,22 @@ header div .bloco{
     flex-direction: column;
 }
 
+header #hand{
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+}
+
 section{
     grid-area: section;
     background-color: darkgrey;
+    display: flex;
+}
+
+section #input{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    border-bottom-right-radius: 30%;
 }
 
