@@ -79,6 +79,16 @@ section{
     display: flex;
 }
 
+section #section{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+section p{
+    color: gray;
+}
+
 section #input{
     display: flex;
     justify-content: center;
