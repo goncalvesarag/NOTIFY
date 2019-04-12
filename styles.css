@@ -1,6 +1,64 @@
 body{
     margin:0;
+    display: grid;
+    grid-template-areas: 'header header header''article article article'
+                         'section section section''aside aside aside'
+                         'footer footer footer';
+    grid-template-rows:  79vh 20vh 30vh 30vh 15vh;
+    grid-template-columns: 33.3vw 33.3vw 33.3vw;
+    background-color: limegreen;
 }
+
+aside{
+    grid-area: aside;
+    background-color: white;
+}
+
 aside div img{
     background-color: black;
 }
+
+article{
+    grid-area: article;
+    background-color: white;
+}
+
+footer{
+    grid-area: footer;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+    height: 20px;
+    width: 600px;
+}
+
+header{
+    background-image: url("images/banner.png");
+    grid-area: header;
+    margin-top: 7px;
+    display: flex;
+}
+
+#textoBanner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header div .bloco{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+
+section{
+    grid-area: section;
+    background-color: darkgrey;
+}
+
