@@ -1,64 +1,24 @@
 body{
     margin:0;
     display: grid;
-    grid-template-areas: 'header header header''article article article'
-                         'section section section''aside aside aside'
+    grid-template-areas: 'header header header'                    'article article article'
+                         'section section section'
+                         'aside aside aside'
                          'footer footer footer';
-    grid-template-rows:  79vh 20vh 30vh 30vh 15vh;
+    grid-template-rows:  82.3vh 45.7vh 57.4vh 63.4vh 18.1vh; /* FOI ALERADO A ALTURA DE CADA VH */
     grid-template-columns: 33.3vw 33.3vw 33.3vw;
     background-color: limegreen;
 }
-
-aside{
-    grid-area: aside;
-    background-color: white;
-}
-
-aside div img{
-    background-color: darkgray;
-    border-radius: 50%;
-}
-
-article{
-    grid-area: article;
-    background-color: white;
-}
-
-footer{
-    grid-area: footer;
-    background-color: darkgrey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer div{
-    display: flex;
-    justify-content: space-around;
-    height: 20px;
-    width: 600px;
-}
-
-footer div a{
-    color: grey;
-    text-decoration: none;
-}
-
+ /* ESTÃOO E ORDEM DE ACORDO O HTML */
 header{
-    background-image: url("images/banner.png");
     grid-area: header;
+    background-image: url("images/banner.png");
     padding: 0;
     margin-top: 7px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-#textoBanner{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
+    background-size: cover;
 }
 
 header div .bloco{
@@ -69,8 +29,15 @@ header div .bloco{
 
 header #hand{
     display: flex;
-    align-items: flex-start;
     margin: 0;
+    width: 1px;
+    align-items: flex-start;
+    background-size: 10%;
+}
+
+article{
+    grid-area: article;
+    background-color: rgb(128, 54, 54);
 }
 
 section{
@@ -95,4 +62,41 @@ section #input{
     height: 30px;
     border-bottom-right-radius: 30%;
 }
+
+aside{
+    grid-area: aside;
+    background-color: rgb(98, 160, 48);
+}
+
+aside div img{
+    background-color: darkgray;
+    border-radius: 50%;
+}
+
+footer{
+    grid-area: footer;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+    height: 20px;
+    width: 600px;
+}
+
+footer div a{
+    color: grey;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
 
