@@ -100,7 +100,7 @@ section{
     background-color: rgb(202, 202, 202);
     display: flex;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;
 }
 
 section #section{
@@ -133,11 +133,30 @@ section #input #botao{
 aside{
     grid-area: aside;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-aside div img{
+aside .iconsAside img{
     background-color: rgb(197, 195, 195);
     border-radius: 50%;
+    height: 40px;
+}
+
+#textoAside{
+    width: 700px;
+}
+
+aside .texto2{
+    color: rgb(199, 199, 199);
+}
+
+aside .iconsAside :hover{
+    background-color: rgba(11, 212, 11, 0.5);
+    border-radius: 50%;
+    height: 40px;
 }
 
 footer{
