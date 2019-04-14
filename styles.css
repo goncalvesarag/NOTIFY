@@ -1,48 +1,103 @@
 body{
     margin:0;
     display: grid;
-    grid-template-areas: 'header header header'                    'article article article'
-                         'section section section'
-                         'aside aside aside'
-                         'footer footer footer';
-    grid-template-rows:  82.3vh 45.7vh 57.4vh 63.4vh 18.1vh; /* FOI ALERADO A ALTURA DE CADA VH */
-    grid-template-columns: 33.3vw 33.3vw 33.3vw;
+    grid-template-areas: 'header header header header'        
+                         'article article article article'
+                         'section section section section'
+                         'aside aside aside aside'
+                         'footer footer footer footer';
+    grid-template-rows:  79vh 44vh 56vh 62vh 18.1vh; /* FOI ALERADO A ALTURA DE CADA VH */
+    grid-template-columns: 25vw 25vw 25vw 25vw;
     background-color: limegreen;
 }
  /* ESTÃOO E ORDEM DE ACORDO O HTML */
 header{
     grid-area: header;
     background-image: url("images/banner.png");
-    padding: 0;
     margin-top: 7px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-size: cover;
+    justify-content: center;
+    padding-bottom: 0;
 }
 
-header div .bloco{
+header .bloco{
     display: flex;
-    justify-content:space-around;
     flex-direction: column;
 }
 
-header #hand{
+header div #hand{
+    width: 80%;
+    column-count: 3;
+    margin-top: 111px;
+}
+
+header h1{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Pacifico', cursive;
+    font-size: 34pt;
+    color: white;
+}
+
+#ponto{
     margin: 0;
-    width: 1px;
-    align-items: flex-start;
-    background-size: 10%;
+    font-size: 28pt;
+    color: green;
+}
+
+header div p{
+    font-size: 16pt;
+    width: 400px;
+    color: white;
+}
+
+header #iconsBanner{
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+header #iconsBanner img{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 46%;
+    padding: 10px;
+}
+
+header #iconsBanner :hover{
+    border-radius: 46%;
+    background-color: rgba(11, 212, 11, 0.5);
 }
 
 article{
     grid-area: article;
-    background-color: rgb(128, 54, 54);
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article .articleDiv{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article .articleDiv img{
+    background-color: rgb(7, 177, 7);
+    border-radius: 50%;
+    padding: 14px; 
+}
+
+article .articleDiv p{
+    color: gray;
 }
 
 section{
     grid-area: section;
-    background-color: darkgrey;
+    background-color: rgb(202, 202, 202);
     display: flex;
 }
 
@@ -65,17 +120,17 @@ section #input{
 
 aside{
     grid-area: aside;
-    background-color: rgb(98, 160, 48);
+    background-color: white;
 }
 
 aside div img{
-    background-color: darkgray;
+    background-color: rgb(197, 195, 195);
     border-radius: 50%;
 }
 
 footer{
     grid-area: footer;
-    background-color: darkgrey;
+    background-color: rgb(199, 199, 199);
     display: flex;
     justify-content: center;
     align-items: center;
