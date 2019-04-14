@@ -99,6 +99,8 @@ section{
     grid-area: section;
     background-color: rgb(202, 202, 202);
     display: flex;
+    justify-content: space-around;
+    align-items: center;    
 }
 
 section #section{
@@ -115,8 +117,18 @@ section #input{
     display: flex;
     justify-content: center;
     height: 30px;
-    border-bottom-right-radius: 30%;
 }
+
+section #input #email{
+border-radius: 10px 0 0 10px;
+}
+
+section #input #botao{
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(7, 177, 7);
+    width: 70px;
+    color: white;
+    }
 
 aside{
     grid-area: aside;
