@@ -179,6 +179,12 @@ footer div a{
     text-decoration: none;
 }
 
+footer div :hover{
+    text-decoration: underline;
+    color: grey;
+
+}
+
 
 
 
