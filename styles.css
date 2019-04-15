@@ -6,11 +6,12 @@ body{
                          'section section section section'
                          'aside aside aside aside'
                          'footer footer footer footer';
-    grid-template-rows:  79vh 44vh 56vh 62vh 18.1vh; /* FOI ALERADO A ALTURA DE CADA VH */
-    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows:  89.1vh 50vh 62vh 62vh 20vh; 
+    grid-template-columns: 15vw 25vw;
     background-color: limegreen;
 }
  /* ESTÃOO E ORDEM DE ACORDO O HTML */
+
 header{
     grid-area: header;
     background-image: url("images/banner.png");
@@ -19,17 +20,19 @@ header{
     align-items: center;
     justify-content: center;
     padding-bottom: 0;
+    background-size: cover;
 }
 
 header .bloco{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 header div #hand{
-    width: 80%;
     column-count: 3;
-    margin-top: 111px;
+    margin-top: 10px;
+    margin-left: 25px;
 }
 
 header h1{
@@ -51,22 +54,26 @@ header div p{
     font-size: 16pt;
     width: 400px;
     color: white;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: bold;
 }
 
 header #iconsBanner{
     display: flex;
-    justify-content: space-around;
-    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    width: 210px;
 }
 header #iconsBanner img{
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 46%;
-    padding: 10px;
+    border-radius: 60px;
+    padding: 15px;
+
 }
 
 header #iconsBanner :hover{
-    border-radius: 46%;
     background-color: rgba(11, 212, 11, 0.5);
+    border-radius: 60px;
 }
 
 article{
@@ -75,24 +82,31 @@ article{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-weight: none;
 }
 
-article .articleDiv{
+article div{
+    align-items: center;
     width: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    font-weight: gray;
+    justify-content: space-around;
 }
 
-article .articleDiv img{
+article div img{
     background-color: rgb(7, 177, 7);
     border-radius: 50%;
-    padding: 14px; 
+    padding: 20px; 
+    margin-top: 30px;
 }
 
-article .articleDiv p{
+article div p{
     color: gray;
+    font-family: 'Mukta Vaani', sans-serif;
+    justify-content: center;
+    align-content: center;
+    display: flex;
 }
 
 section{
@@ -101,12 +115,20 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Mukta Vaani', sans-serif;
+
 }
 
 section #section{
     display: flex;
     flex-direction: column;
     width: 40%;
+    font-family: 'Mukta Vaani', sans-serif;
+    color: rgb(54, 45, 45);
+    
+}
+section h4{
+    font-size: 20px;
 }
 
 section p{
@@ -116,18 +138,28 @@ section p{
 section #input{
     display: flex;
     justify-content: center;
-    height: 30px;
+    height: 40px;  
+    font-family: 'Mukta Vaani', sans-serif;
+  
 }
 
 section #input #email{
-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+    width: 250px;
+    height: 45px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 20px;
 }
 
 section #input #botao{
     border-radius: 0 10px 10px 0;
-    background-color: rgb(7, 177, 7);
-    width: 70px;
+    background-color: rgb(102, 189, 102);
+    height: 50px;
+    width: 120px;
     color: white;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
     }
 
 aside{
@@ -137,6 +169,8 @@ aside{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Mukta Vaani', sans-serif;
+
 }
 
 aside .iconsAside img{
@@ -146,13 +180,24 @@ aside .iconsAside img{
 }
 
 #textoAside{
-    width: 700px;
+    width: 500px;
+}
+aside p{
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 15px;
+    text-align: center;
 }
 
-aside .texto2{
+aside div .texto2{
+    align-items: center;
     color: rgb(199, 199, 199);
+    justify-content: center;
 }
-
+aside .iconsAside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 aside .iconsAside :hover{
     background-color: rgba(11, 212, 11, 0.5);
     border-radius: 50%;
@@ -165,6 +210,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-style: italic; 
 }
 
 footer div{
@@ -177,12 +224,8 @@ footer div{
 footer div a{
     color: grey;
     text-decoration: none;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+
 }
-
-
-
-
-
-
-
-
