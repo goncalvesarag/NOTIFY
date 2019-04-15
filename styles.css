@@ -31,7 +31,7 @@ header .bloco{
 
 header div #hand{
     column-count: 3;
-    margin-top: 10px;
+    margin-top: 11.7vh;
     margin-left: 25px;
 }
 
@@ -231,4 +231,10 @@ footer div a{
     font-family: 'Mukta Vaani', sans-serif;
     font-style: normal;
     font-size: 15px;
+}
+
+footer div :hover{
+    text-decoration: underline;
+    color: grey;
+
 }
