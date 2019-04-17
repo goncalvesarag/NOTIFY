@@ -6,7 +6,7 @@ body{
                          'section section section section'
                          'aside aside aside aside'
                          'footer footer footer footer';
-    grid-template-rows:  89.1vh 50vh 62vh 62vh 20vh; 
+    grid-template-rows:  90vh 50vh 62vh 62vh 20vh; 
     grid-template-columns: 15vw 25vw;
     background-color: limegreen;
 }
@@ -31,8 +31,7 @@ header .bloco{
 
 header div #hand{
     column-count: 3;
-    margin-top: 11.7vh;
-    margin-left: 25px;
+    margin-top: 13.5vh;
 }
 
 header h1{
